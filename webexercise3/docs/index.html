@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Jungle - Valerie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Client-Side Assignment 3</p>
+          <h1>My Jungle</h1>
+          <p class="hero-text">
+            Step into a living rainforest where each creature can be awakened
+            with a tap or a key.
+          </p>
+          <div class="hero-actions">
+            <button id="music-toggle" class="btn primary">
+              Start Jungle Music
+            </button>
+            <button id="mute-btn" class="btn secondary">Mute Jungle</button>
+            <button id="shuffle-btn" class="btn secondary">
+              Shuffle the Glow
+            </button>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <img
+            src="assets/images/jungle-banner.svg"
+            alt="Decorative jungle illustration"
+          />
+        </div>
+      </header>
+
+      <main>
+        <section class="controls" aria-label="Jungle controls">
+          <article class="control-card">
+            <h2>Keyboard Jungle Kit</h2>
+            <p>Press the keys below to trigger each animal's sound.</p>
+            <ul class="key-list">
+              <li><span>A</span> Lion</li>
+              <li><span>S</span> Elephant</li>
+              <li><span>D</span> Monkey</li>
+              <li><span>F</span> Bird</li>
+              <li><span>G</span> Frog</li>
+              <li><span>H</span> Wolf</li>
+              <li><span>J</span> Dolphin</li>
+              <li><span>K</span> Tiger</li>
+            </ul>
+          </article>
+
+          <article class="control-card">
+            <h2>Immersive Atmosphere</h2>
+            <p>
+              The rainforest uses motion, color, and responsive cards to make
+              every interaction feel alive.
+            </p>
+          </article>
+        </section>
+
+        <section class="animals-section" aria-labelledby="animals-heading">
+          <div class="section-heading">
+            <h2 id="animals-heading">Meet the Jungle Choir</h2>
+            <p>Tap a card or use the matching keyboard key.</p>
+          </div>
+
+          <div class="animals-grid">
+            <article
+              class="animal-card"
+              data-animal="lion"
+              tabindex="0"
+              role="button"
+              aria-label="Play lion sound"
+            >
+              <img
+                src="assets/images/lion.jpg"
+                alt="Lion resting in the savanna"
+              />
+              <div class="card-body">
+                <h3>Lion</h3>
+                <p>Commanding roar with jungle warmth.</p>
+                <span class="hotkey">A</span>
+              </div>
+            </article>
+
+            <article
+              class="animal-card"
+              data-animal="elephant"
+              tabindex="0"
+              role="button"
+              aria-label="Play elephant sound"
+            >
+              <img
+                src="assets/images/elephant.jpg"
+                alt="Elephant walking through lush greenery"
+              />
+              <div class="card-body">
+                <h3>Elephant</h3>
+                <p>Deep, grounding calls echo through the trees.</p>
+                <span class="hotkey">S</span>
+              </div>
+            </article>
+
+            <article
+              class="animal-card"
+              data-animal="monkey"
+              tabindex="0"
+              role="button"
+              aria-label="Play monkey sound"
+            >
+              <img
+                src="assets/images/monkey.jpg"
+                alt="Monkey perched in the canopy"
+              />
+              <div class="card-body">
+                <h3>Monkey</h3>
+                <p>Playful chatter that brightens the canopy.</p>
+                <span class="hotkey">D</span>
+              </div>
+            </article>
+
+            <article
+              class="animal-card"
+              data-animal="bird"
+              tabindex="0"
+              role="button"
+              aria-label="Play bird sound"
+            >
+              <img
+                src="assets/images/bird.jpg"
+                alt="Colorful bird in the jungle"
+              />
+              <div class="card-body">
+                <h3>Bird</h3>
+                <p>Bright chirps and fluttering motion.</p>
+                <span class="hotkey">F</span>
+              </div>
+            </article>
+
+            <article
+              class="animal-card"
+              data-animal="frog"
+              tabindex="0"
+              role="button"
+              aria-label="Play frog sound"
+            >
+              <img
+                src="assets/images/frog.jpg"
+                alt="Green frog sitting on a leaf"
+              />
+              <div class="card-body">
+                <h3>Frog</h3>
+                <p>Playful croaks that stir the marshes.</p>
+                <span class="hotkey">G</span>
+              </div>
+            </article>
+
+            <article
+              class="animal-card"
+              data-animal="wolf"
+              tabindex="0"
+              role="button"
+              aria-label="Play wolf sound"
+            >
+              <img
+                src="assets/images/wolf.jpg"
+                alt="Wolf in a forest clearing"
+              />
+              <div class="card-body">
+                <h3>Wolf</h3>
+                <p>A haunting call that carries through misty woods.</p>
+                <span class="hotkey">H</span>
+              </div>
+            </article>
+
+            <article
+              class="animal-card"
+              data-animal="dolphin"
+              tabindex="0"
+              role="button"
+              aria-label="Play dolphin sound"
+            >
+              <img
+                src="assets/images/dolphin.jpg"
+                alt="Dolphin leaping beside the sea"
+              />
+              <div class="card-body">
+                <h3>Dolphin</h3>
+                <p>Bright clicks and splashing rhythm.</p>
+                <span class="hotkey">J</span>
+              </div>
+            </article>
+
+            <article
+              class="animal-card"
+              data-animal="tiger"
+              tabindex="0"
+              role="button"
+              aria-label="Play tiger sound"
+            >
+              <img
+                src="assets/images/tiger.jpg"
+                alt="Tiger prowling through dense grass"
+              />
+              <div class="card-body">
+                <h3>Tiger</h3>
+                <p>Bold, vivid and fierce in every beat.</p>
+                <span class="hotkey">K</span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="music-overlay" class="music-overlay">
+      <div class="overlay-card">
+        <h2>Awaken the Jungle</h2>
+        <p>Unlock the ambient soundtrack to begin the immersive experience.</p>
+        <button id="unlock-music" class="btn primary">Enter the Jungle</button>
+      </div>
+    </div>
+
+    <audio
+      id="bg-audio"
+      loop
+      preload="auto"
+      muted
+      aria-hidden="true"
+      src="assets/audio/jungle.mp3"
+    ></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
